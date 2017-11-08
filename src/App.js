@@ -8,8 +8,14 @@ import Todo from './Todo';
 
 class App extends Component {
 
+  constructor(){
+    super();
+
+  }
+
 // Establish a function that we are going to be passing
 // into the Todo Component.
+<<<<<<< HEAD
   function alertMe(){
     alert("You're a wizard");
   }
@@ -18,10 +24,32 @@ class App extends Component {
     return (
       <div>
       
+=======
+
+  handleSubmit(e){
+    e.preventDefault();
+  }
+
+  handleChange(e){
+    e.preventDefault();
+  
+  }
+
+  render() {
+    return (
+      <div>
+
+        <form onSubmit={(event)=> this.handleSubmit(event)}>
+          <input onChange={()=>this.handleChange(event)} />
+          <input type="submit"/>
+        </form>
+
+>>>>>>> 4cc24cf0471b7d58d707f5ad127e0c14a5aa0565
       </div>
     );
   }
 
+<<<<<<< HEAD
 }
 
 // Fix all the errors that are plaguing this application thus far.
@@ -38,5 +66,13 @@ class App extends Component {
 
 
 
+=======
+
+// Change the state of both the local component and the parent component
+// introduce the local loop and creating a new component to handle the loop
+// talk about key in the <li>
+// constructor method
+
+>>>>>>> 4cc24cf0471b7d58d707f5ad127e0c14a5aa0565
 
 export default App;
