@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 
 class Todo extends React.Component{
 
+render(){
+  console.log(this.props)
   return(
-<<<<<<< HEAD
-
-  )
-=======
     <div>
-    
+    {this.props.tasks}
     </div>
   )
 }
->>>>>>> 4cc24cf0471b7d58d707f5ad127e0c14a5aa0565
 
 }
 
-export Todo
+export default Todo
