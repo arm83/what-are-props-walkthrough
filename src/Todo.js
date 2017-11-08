@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
 
 class Todo extends React.Component{
 
-render(){
-  debugger
   return(
+<<<<<<< HEAD
+
+  )
+=======
     <div>
-     <button onClick={(event) => this.props.alert(event)}>
-      My alert button
-     </button>
+    
     </div>
   )
 }
+>>>>>>> 4cc24cf0471b7d58d707f5ad127e0c14a5aa0565
+
 }
 
-export default Todo
+export Todo
